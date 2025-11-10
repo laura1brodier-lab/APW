@@ -1,0 +1,52 @@
+/* Fuente para todo el documento */
+body {
+    font-family: Verdana, sans-serif;
+    color: #000;
+    font-size: 12px;
+}
+
+/* Estilo para h1 */
+h1 {
+    color: #333;
+    font-size: 20px;
+}
+
+/* Estilo para h2 */
+h2 {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Estilo para párrafos */
+p {
+    color: #000;
+    font-size: 12px;
+}
+
+/* Estilo para listas */
+ul, ol, li {
+    color: #000;
+    font-size: 12px;
+}
+
+/* Estilo para enlaces */
+a {
+    color: blue;
+    font-size: 12px;
+    text-decoration: none; /* opcional: sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* opcional: subrayado al pasar el cursor */
+}
+
+/* Estilo para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
