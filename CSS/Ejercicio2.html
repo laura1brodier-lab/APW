@@ -33,17 +33,34 @@ table {
 table, th, td {
     border: 1px solid black;}
 
+/* Encabezados de columnas (thead) */
+thead th.especial {
+  color: red;}
+
+/* Caption de la tabla */
+caption {
+  color: blue;}
+
+/* Encabezado de fila 1 (Título fila 1) */
+tbody th.especial {
+  color: orange;}
+
 /* Estilos de la tabla */
 thead th.especial {
     color: orange;}
 
-/* Estilo en Título fila 1*/
-
-
+/* Celdas del cuerpo */
+td {color: olive;}
 
 /* Encabezado de fila "Título fila 2"*/
 tbody tr:nth-child(2) th {
     color: red;}
+
+/* Color en em de td*/
+td em{color: green;}
+
+/*Color en strong de td*/
+td strong{color: orange;}
 
 /* Fila de Tfoot*/
 tfoot * {
