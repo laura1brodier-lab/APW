@@ -1,0 +1,20 @@
+/* Estilos para todos los enlaces */
+a {
+    margin: 1em 0;
+    color: #CC0000;
+    float: left;
+    clear: left;
+    padding: 2px;
+}
+
+/* Estilo cuando el cursor está sobre el enlace */
+a:hover {
+    text-decoration: none;
+    background-color: #CC0000;
+    color: #FFF;
+}
+
+/* Estilo para enlaces visitados */
+a:visited {
+    color: #CCC;
+}
