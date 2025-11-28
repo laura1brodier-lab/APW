@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+form {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+fieldset.grupo {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Regla 3: Estructura a una columna */
+/* Las etiquetas y campos ocupan todo el ancho y se apilan */
+fieldset.grupo label {
+    display: block;
+    float: none; 
+    width: auto;
+    text-align: left;
+    margin-bottom: 3px;
+    padding-left: 0;
+}
+
+fieldset.grupo input,
+fieldset.grupo select {
+    display: block;
+    float: none;
+    width: 100%; /* Ocupa todo el ancho */
+    margin-bottom: 10px;
+}
+
+/* Regla 2.1 y 4: Hover en el grupo de elementos (<fieldset>) */
+fieldset.grupo:hover {
+    background-color: #FF9; /* Fondo amarillo claro */
+}
+
+/* Mensajes de ayuda: Ocultar por defecto */
+.ayuda {
+    font-size: 0.8em;
+    color: #C60; /* El color de ayuda en la imagen final es naranja */
+    padding: 0 10px;
+    clear: both;
+    /* Regla 4: Ocultar por defecto */
+    display: none; 
+}
+
+/* Regla 4: Mostrar el mensaje de ayuda al pasar el ratón */
+fieldset.grupo:hover .ayuda { 
+    display: block;
+}
+
+/* Regla 2.2: Focus en los campos de texto */
+fieldset.grupo input:focus,
+fieldset.grupo select:focus {
+    border: 2px solid #E6B700; /* Borde amarillo resaltado */
+    padding: 4px; 
+    box-sizing: border-box; /* Para mantener el tamaño del campo */
+}
+
+/* Estilos para el botón Darse de alta (no requerido, pero mejora la imagen) */
+button, input[type="submit"] {
+    float: right;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Limpieza de floats */
+.clear { clear: both; }
+form::after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,110 @@
+body {
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* 2. Los elementos .articulo h2 */
+/* Aplicado a los títulos principales de los artículos */
+#contenido #principal h2 { 
+    color: #CC6600; 
+    font-size: 1.6em;
+    line-height: 1.2;
+    margin-bottom: 0.3em;
+}
+
+/* 3. Los elementos del #menu */
+/* Margen derecho en los items de menú */
+#menu ul#menu_principal li {
+    margin-right: 1em; 
+}
+/* Enlaces en el menú */
+#menu ul#menu_principal li a { 
+    color: white; 
+    font-size: 1.3em;
+}
+
+/* 4. Estilos para #lateral */
+#lateral {
+    font-size: 0.9em; /* Tamaño de texto de todo el lateral */
+}
+
+/* Color para el título de la sección de noticias */
+#lateral #noticias h2 {
+    color: #003366;
+}
+
+/* Fecha de la noticia (se asume un elemento para la fecha, por ejemplo, con clase .fecha-noticia) */
+.fecha-noticia { 
+    display: block; /* Ocupar toda su línea */
+    color: #999; /* color gris claro */
+}
+
+/* 5. Estilos para #publicidad */
+#lateral #publicidad {
+    color: #555; /* Texto del elemento #publicidad */
+}
+#lateral #publicidad a { 
+    color: #CC6600; /* Enlaces de #publicidad */
+}
+
+/* 6. Enlaces y párrafos dentro de .articulo */
+#contenido #principal .articulo a { 
+    color: #CC6600; 
+}
+#contenido #principal .articulo p { 
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+/* 7. #secundario (Estilos para bloques con borde naranja) */
+/* Se asume que cada bloque (Phaseellus blandit y Nullam vel turpis) es un div con clase '.bloque-secundario' */
+#contenido #secundario .bloque-secundario {
+    border: 1px solid #C60;
+    margin-bottom: 1em;
+    padding: 0; /* Para controlar el padding de los elementos internos */
+}
+/* Título/Barra de color naranja dentro del bloque */
+#contenido #secundario .bloque-secundario h3 { 
+    background-color: #DB905C; /* El color de fondo de la barra */
+    color: white; 
+    padding: 0.5em;
+    margin: 0; /* Eliminar el margen por defecto del h3 */
+    text-transform: uppercase;
+}
+/* Contenido de texto dentro del bloque */
+#contenido #secundario .bloque-secundario p {
+    padding: 0 0.5em; 
+    margin: 0.5em 0;
+}
+/* Enlace "Seguir leyendo..." */
+#contenido #secundario .bloque-secundario a {
+    display: block;
+    text-align: right;
+    padding: 0.5em;
+    color: #004C99; /* El color de este enlace se ve azul */
+}
+
+/* 8. #pie (Estilos para enlaces con separador y copyright) */
+/* Se asume que los enlaces están en una lista ul dentro de .enlaces */
+#pie .enlaces ul li { 
+    display: inline;
+    float: left;
+    border-right: 1px solid #999; /* Separador tipo '|' */
+    padding: 0 0.5em; 
+    line-height: 1; /* Para ayudar a la alineación vertical */
+}
+/* Eliminar el separador del último elemento (opcional pero recomendado) */
+#pie .enlaces ul li:last-child {
+    border-right: none;
+}
+/* Enlaces del pie de página */
+#pie .enlaces ul li a { 
+    color: #004C99; 
+}
+/* Copyright */
+#pie .copyright {
+    color: #999; 
+    /* El float:right ya está definido en el CSS existente. */
+}
