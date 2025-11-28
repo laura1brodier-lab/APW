@@ -1,0 +1,25 @@
+#galeria {
+    /* Establece un ancho máximo para el contenedor de la galería. 
+       Esto permite que las imágenes se organicen en filas de tres 
+       si el ancho de las imágenes + márgenes cabe. */
+    max-width: 650px; 
+    /* Es fundamental añadir 'margin: 0 auto;' para centrar la galería horizontalmente 
+       si el contenedor es más estrecho que la ventana del navegador. 
+       Aunque no se indica explícitamente, es una buena práctica de diseño. */
+    margin: 0 auto;
+}
+#galeria img {
+    /* 1. Hace que las imágenes floten a la izquierda. Esto permite que los elementos 
+          siguientes se coloquen a su lado hasta que no haya más espacio, 
+          creando las filas. */
+    float: left;
+    
+    /* 2. Añade espacio exterior (separación entre imágenes) */
+    margin: 1em; 
+    
+    /* 3. Añade espacio interior (entre la imagen y el borde) */
+    padding: .5em; 
+    
+    /* 4. Define un borde para cada imagen */
+    border: 1px solid #CCC; 
+}
