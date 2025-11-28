@@ -1,0 +1,14 @@
+/* Subrayar los enlaces dentro de la lista */
+ul li a {
+    text-decoration: underline;  /* subraya los nombres */
+    color: blue;                 /* opcional: cambiar color */
+    font-weight: bold;            /* opcional: ponerlos en negrita */
+}
+
+/* Línea al final */
+hr {
+    border: 0;
+    height: 2px;
+    background-color: black;  /* color de la línea */
+    margin-top: 20px;
+}
