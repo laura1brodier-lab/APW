@@ -1,0 +1,124 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0a0a0f;
+    color: #eaeaea;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 130px 20px;
+    background: url("https://i.imgur.com/Ke2OIP0.jpeg") no-repeat center/cover;
+    color: #fff;
+    text-shadow: 0 0 10px #00c8ff, 0 0 20px #0099ff;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+/* BLOQUES */
+.bloque {
+    padding: 70px 40px;
+    text-align: center;
+}
+
+.bloque h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #00c8ff;
+    text-shadow: 0 0 15px #0099ff;
+}
+
+/* TARJETAS */
+.contenedor-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    width: 300px;
+    background: #111122;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.35);
+    transition: 0.3s ease;
+    border: 2px solid #00c8ff;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px #00c8ff;
+}
+
+.card .img {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card h3 {
+    margin: 15px 10px 5px;
+    font-size: 24px;
+    color: #00c8ff;
+}
+
+.card p {
+    padding: 0 10px 20px;
+    color: #ddd;
+    font-size: 16px;
+}
+
+/* TABLA */
+.tabla-section {
+    padding: 50px;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background: #111122;
+    box-shadow: 0 0 25px rgba(0, 200, 255, 0.3);
+    border: 2px solid #00c8ff;
+}
+
+th, td {
+    border: 1px solid #1d1d2e;
+    padding: 14px;
+}
+
+th {
+    background: #0d0d20;
+    color: #00c8ff;
+    font-size: 18px;
+    text-shadow: 0 0 10px #0099ff;
+}
+
+tr:nth-child(even) {
+    background: #151528;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #0d0d20;
+    color: #9bbcd1;
+    margin-top: 40px;
+}
+
+
+
+
